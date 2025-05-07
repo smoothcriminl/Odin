@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="styleSheet" href="./calc.css">
+</head>
+<body>
+    <div class="container">
+       <div class="calculator">
+        <div class="display-calc">
+            <input type="text" placeholder="0" id="myDisplay" readonly/>
+        </div>
+        <div class="keyContainer">
+            <div class="extra-function">
+                <div class="keys">%</div>
+                <div class="keys">^</div>
+                <div class="keys"><</div>
+                <div class="keys">></div>
+                <div class="keys">(</div>
+                <div class="keys">)</div>
+            </div>
+            <div class="d-flex">
+                <div class="main-function-keys">
+                    <div class="keys">1</div>
+                    <div class="keys">2</div>
+                    <div class="keys">3</div>
+                    <div class="keys">4</div>
+                    <div class="keys">5</div>
+                    <div class="keys">6</div>
+                    <div class="keys">7</div>
+                    <div class="keys">8</div>
+                    <div class="keys">9</div>
+                    <div class="keys">0</div>
+                    <div class="keys">-</div>
+                    <div class="dell">DEL</div>
+                    <div class="keys">/</div>
+                    <div class="keys">*</div>
+                    <div class="keys">+</div>
+                    <div class=" equal" id="equalTo">=</div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+    <script src="./jquery/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $(".dell").click(function(){
+        
+                var myDisplay = document.getElementById("myDisplay")
+                var dispvalue =myDisplay.value;
+
+                    myDisplay.value = dispvalue.slice(0, -1);
+            })
+            $("#equalTo").click(function(){
+            var dispvalue = document.getElementById("myDisplay").value
+                calc = eval(dispvalue) 
+                $("#myDisplay").val(calc);   
+            })
+
+            $(".keys").click(function(){
+                var myDisplay = document.getElementById("myDisplay")
+                var inputNumber = $(this).text();
+                myDisplay.append(inputNumber)
+                myDisplay.value += inputNumber
+            })
+        })
+    </script>
+</body>
+</html>
