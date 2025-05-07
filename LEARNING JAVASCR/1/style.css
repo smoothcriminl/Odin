@@ -1,0 +1,12 @@
+*{
+    margin-top: 100px;
+    /* border: 1px solid rgba(0, 0, 0, 0.906); */
+}
+body{
+    background-color: blueviolet;
+    text-align: center;
+}
+a{
+    color: black;
+    font-size: larger;
+} 
