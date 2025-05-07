@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: calibri;
+    /* border: 1px solid rgba(0,0,0,0.1); */
+}
+body{
+    padding-left: 170px;
+    padding-right: 170px;
+    background-color: ghostwhite;
+}
+.nav-bar{
+    top: 0px;
+    height: fit-content;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.nav-bar img{
+    width: 20px;
+}
+.brand-name{
+    width: 20%;
+    font-weight: 900;
+    color: red;
+    padding: 10px;
+    padding-left: 5px;
+    display: flex;
+}
+.menu{
+    align-content: center;
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+}
+.menu-item a{
+    text-decoration: none;
+    color: gray;
+}
+.container{
+    background-color: white;
+    width: 100%;
+    height: 420px;   
+    
+}
+.search{
+    height: 170px;
+    align-content: center;
+    justify-items: center;
+    color: gray;
+}
+.Searching{
+    border: solid;
+    border-color: red;
+    border-radius: 2px;
+    border-width: 4px;
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+}
+.search .searchin{
+    padding: 7px;
+    border: none;
+    width:70%;
+    outline: none;
+}
+.search .searchbtn{
+    background-color: red;
+    color: whitesmoke;
+    padding: 10px;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    width: 30%;
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    gap: 40px;
+}
+.section .videos{
+    width: 40%;
+}
+.videos img{
+    width: 100%;
+    border-radius: 3px;
+}
+.section .drops{
+    width: 60%;
+}
+.section .drops-items img{
+    width: 20px;
+    align-self: center;
+}
+.section .drops-items{
+    list-style: none;
+    display: flex;
+    flex-direction: row;    
+}
+.drops .drops-items li{
+    cursor: pointer;
+    padding-bottom: 10px;
+    color: red;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    padding: 10px;
+    align-items: center;
+}
+.destination{
+    width: 100%;
+    height: 200px;
+}
+.destination .btn1{
+    background-color: rgb(56, 66, 255);
+    border-radius: 2px ;
+    color: white;
+    border-width: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    cursor: pointer;
+    border: none;
+}
+.destination .btn2{
+    background-color: green;
+    border-radius: 2px ;
+    color: white;
+    border-width: 4px;
+    padding-left: 4px;
+    padding-right: 6px;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+    font-weight: 100;
+}
+.active{
+    background-color: #5d5b5b;
+    color: black !important;
+    border-radius: 5px 5px 0px 0px;
+    padding-left: 30px;
+    
+}
+.description{
+    color: gray;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.breakdown{
+    background: linear-gradient(
+        160deg,
+        rgb(53, 12, 12) 0%,
+        rgba(135, 46, 46, 0.957) 100%
+        );
+    border-radius: 7px;
+    justify-items: center;
+    /* align-content: center; */
+    width: 100%;
+    justify-self: center;
+    height: 200px;
+}
+.breakdown h3{
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 900;
+    font-size: 28px;
+    max-height: 30%;
+}
+.breakdown ul{
+    list-style: none;
+    width: 600px;
+    color: rgb(212, 211, 211);
+    font-size: 12px;
+    font-weight: 100;
+    padding-top: 30px;
+}
+.Steps{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.Noted{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    font-size: 13px;
+    color: gray;
+}
+.Steps .Note{
+    font-weight: bold;
+    color: black;
+}
+.StepI{
+    color: gray;
+    padding-bottom: 5px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.StepI .Step1{
+    border-radius:90px ;
+    width: 5%;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: rgb(148, 12, 12);
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+}
+.StepII{
+    color: gray;
+    padding-top: 15px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.StepII .Step2{
+    border-radius:90px ;
+    width: 5%;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: rgb(148, 12, 12);
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+}
+.description1{
+    color: gray;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}

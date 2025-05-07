@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<style>
+    table{
+        border-collapse: collapse;
+        width: 95%;
+    }
+    th{
+        border: 1px solid rgb(193, 193, 193);
+        font-weight: 400;
+        width: 5%;
+        height: 50px;
+    }
+   tr td{
+    border: 1px solid rgb(193, 193, 193);
+    text-align: center;
+    width: 5%;
+    height: 50px; 
+   }
+</style>
+<body>
+    <nav class="nav-bar">
+    <div class="brand-name"><img src="./images/Screenshot 2025-02-19 132625.png" alt="refresh"><h3>Y2Mate.fan</h3></div>
+    <div class="menu">
+        <ul class="menu-item">
+            <li><a href="">Youtube to Mp4</a></li>
+            <li><a href="">Youtube to Mp3</a></li>
+            <li><a href="">Youtube Downloader</a></li>
+            <li><a href="">Youtube Converter</a></li>
+            <li><a href="">Languages</a></li>
+        </ul>
+    </div>
+    </nav>
+    <div class="container">
+        <div class="search">
+            <h2>Youtube Downloader</h2>
+            <div class="Searching">
+                <input type="text" class="searchin" placeholder="Search or paste link..."><button class="searchbtn">Start</button>
+            </div>
+        </div>
+        <div class="section">
+            <div class="videos">
+                <img src="./images/Screenshot 2025-02-20 152601.png" alt="refresh">
+                <h4>Delusional kid get reincarnated and is the strongest</h4>
+                <p>Duration: 01:39:36</p>
+            </div>
+            <div class="drops">
+                <ul class="drops-items">
+                    <li id="video"><i class="fa fa-video-camera"></i>Video</li>
+                    <li id="audio"><i class="fa fa-music"></i>Audio</li>
+                    <li id="other"><i class="fa fa-comments"></i>Other</li>
+                </ul>
+                <div class="destination ">
+                    <table>
+                        <tr>
+                            <th colspan="2">File type</th>
+                            <th colspan="2">File size</th>
+                            <th colspan="2" >Action</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2" rowspan="3">360(.mp4)<button class="btn1">meduim</button></td>
+                            <td colspan="2"></td>
+                            <td colspan="2" rowspan="3"><button class=" btn2 fa fa-download">download</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="description">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam in cum inventore. Quae animi ipsam quos officia culpa eius voluptatibus sed in exercitationem. Culpa saepe, reiciendis quis cupiditate et sit temporibus perspiciatis provident omnis quia? Iure quo atque ex.</p>
+    </div>
+    <div class="breakdown">
+        <h3>Multi-platform support for downloading content form popular <br>video-sharing sites.</h3>
+        <div>
+            <ul>
+                <li class="fa fa-check">Conversion to multiple media file formats, including MP3 <br>MP4, and FlV.</li>
+                <li class="fa fa-check">User-friendly interface for easy navigation and quick <br>downloads.</li>
+                <li class="fa fa-check">High quality downloads ensure excellent audio and video <br>playback.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="Steps">
+        <h2>To download videos using Y2Mate</h2>
+        <div class="Noted">
+            <p class="Note">Note:</p><p>Copy the URL of the Video you want to download.</p>
+        </div>
+        <div class="StepI">
+            <p class="Step1">Step 1</p>
+            <p>Paste URL into the Y2Mate websie or app.</p>
+        </div>
+        <div class="StepII">
+            <p class="Step2">Step 2</p>
+            <p>Select the desired file format and quality, then click downlaod</p>
+        </div>
+    </div>
+    <div class="description1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima earum, unde vel distinctio enim fugit, aut in voluptate aliquid quibusdam numquam sed, vero esse iure modi illo veritatis ab. Nemo quibusdam alias facilis enim assumenda molestias dolores animi amet.
+    </div>
+    <script src="./jquery/jquery.js"></script>
+    <script>
+        $(Document).ready(function(){
+             $("#video").click(function(){
+                $("#audio").removeClass("active")
+                $("#other").removeClass("active")
+                $(this).addClass("active")
+                   $(".destination").html(`
+                   <table>
+                    <tr>
+                        <th colspan="2">File type</th>
+                        <th colspan="2">File size</th>
+                        <th colspan="2" >Action</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="3">360(.mp4)<button class="btn1">meduim</button></td>
+                        <td colspan="2"></td>
+                        <td colspan="2" rowspan="3"><button class=" btn2 fa fa-download">download</button></td>
+                </table>
+                   `)
+             })
+             $("#audio").click(function(){
+                $("#video").removeClass("active")
+                $("#other").removeClass("active")
+                $(this).addClass("active")
+                $(".destination").html(`
+                <table>
+                    <tr>
+                        <th colspan="2">File type</th>
+                        <th colspan="2">File weight</th>
+                        <th colspan="2" >Action</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="3">360(.mp4)<button class="btn1">meduim</button></td>
+                        <td colspan="2"></td>
+                        <td colspan="2" rowspan="3"><button class=" btn2 fa fa-download">download</button></td>
+                </table>
+                `)
+          })
+          $("#other").click(function(){     
+            $("#audio").removeClass("active")
+            $("#video").removeClass("active")
+              $(this).addClass("active")
+           
+            $(".destination").html(`
+            <table>
+                <tr>
+                    <th colspan="2">File style</th>
+                    <th colspan="2">File size</th>
+                    <th colspan="2" >Action</th>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="3">360(.mp4)<button class="btn1">meduim</button></td>
+                    <td colspan="2"></td>
+                    <td colspan="2" rowspan="3"><button class=" btn2 fa fa-download">download</button></td>
+            </table>
+            `)
+      })
+        })
+    </script>
+</body>
+</html>
